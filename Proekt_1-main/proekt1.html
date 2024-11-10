@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charseet="utf-8">
+        <title>AutoHub Store</title>
+        <link rel="icon" type="image/png" href="sliki/logo.png">
+        <link rel="stylesheet" type="text/css" href="css/proekt1.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <script src="js/proekt1.js"></script>
+        <script src="https://kit.fontawesome.com/8818ee460b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="navTop" id="top">
+                    <div class="logo">
+                    <a href="#top"><img src="sliki/logo.png" alt="" width="120" height="100" onclick="goToHome()"></a>
+                    </div>
+                    <div class="middle">
+                        <div class="name1"><h1>AUTOHUB</h1></div>
+                        <div class="search">
+                            <input type="text" placeholder="Search..." class="searchBar">
+                            <img src="sliki/search.png" alt="search" class="searchIcon" width="30" height="30">
+                        </div>
+                        <div class="name2"><h1>SHOP</h1></div>
+                    </div>
+                    <div class="login">
+                        <img src="sliki/login-user.png" alt="login" width="130" height="80" onclick="goToLogin()">
+                    </div>
+                </div>
+                <hr>
+            
+                <div class="navBottom">
+                    <a href="#new-carID" style="text-decoration: none;"><h3 class="menuItems1">New Cars</h3></a>
+                    <a href="#old-carID" style="text-decoration: none;"><h3 class="menuItems2">Old Cars</h3></a>
+                    <a href="#used-carID" style="text-decoration: none;"><h3 class="menuItems3">Used Cars</h3></a>
+                    <a href="#electric-carID" style="text-decoration: none;"><h3 class="menuItems4">Electric Cars</h3></a>
+                    <a href="#special-offerID" style="text-decoration: none;"><h3 class="menuItems5">Special Offers</h3></a>
+                </div>
+                <hr>
+            </nav>
+            
+        </header>
+        
+        <div class="opening">
+            <div class="allComp">
+                <div class="pcimg">
+                    <img src="sliki/car.png" width="650px" height="500px">
+                </div>
+                <div class="pctext" style = "margin-left:80px">
+                    <h1>FIND <span class="pctext1">YOUR</span> <span class="pctext1">DREAM</span> CAR<br> TODAY</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="components">
+                <h1>What type of car are you looking for?</h1>
+            </div>
+        </div>
+       
+        <div class="new-car" id="new-carID">
+            <div class="new-carTitle"><h1>New Cars</h1></div>
+            <img src="sliki/new-car.png" alt="" class="main1" height="500" width="350" style="margin-top:20px">
+            <div class="description">
+                <h1 style="font-size: 3em;">Why choose a new car?</h1>
+                <p id="tekst">New cars come with the latest technology, safety features, and warranties. They offer peace of mind with no previous wear and tear, and you can customize them to your preferences. 
+                    New cars also tend to have better fuel efficiency and lower emissions compared to older models. They are equipped with advanced driver-assistance systems (ADAS) that enhance safety and convenience.
+        
+                    Since new cars are built with the latest engineering advancements, they often provide a smoother and more comfortable driving experience. It is difficult to find the same level of innovation and reliability in older models.
+                    <br> New cars also come with comprehensive warranties that cover repairs and maintenance for several years, providing additional peace of mind. They are generally more reliable and require fewer repairs compared to used cars.
+                    A new car can be found at authorized dealerships,<br> which offer a wide range of models and customization options. When it comes<br> to choosing a new car, one may look for features such as fuel efficiency, safety ratings, and technology integration.
+                </p>
+                
+                <div class="buttondiv">
+                    <a href="new-cars.html"><button class="button1">BUY NOW!</button></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="old-car" id="old-carID">
+            <div class="old-carTitle"><h1>Old Cars</h1></div>
+            <img src="sliki/old-car.png" alt="" class="main1" height="400" width="400" style="float:left;margin-top:50px">
+            <div class="description">
+                <h1 style="font-size: 3em;">Why choose an old car?</h1>
+                <p>Old cars can be a great choice for those looking for a budget-friendly option. They often have a lower purchase price and insurance costs. 
+                    Additionally, older cars can have a unique charm and character that newer models might lack. They are often well-maintained and come with a detailed history.
+        
+                    Since older cars have been on the road for a while, they have proven their reliability and durability. It is difficult to find the same level of character and history in newer models.
+                    <br> Old cars also come with a variety of options and features that might be out of budget in new models. They are generally more affordable and can be a great option for first-time buyers.
+                    An old car can be found at various dealerships and private sellers,<br> which offer a wide range of models and prices. When it comes<br> to choosing an old car, one may look for features such as reliability, maintenance history.
+                </p>
+                
+                <div class="buttondiv">
+                    <a href="old-cars.html"><button class="button2">BUY NOW!</button></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="used-car" id="used-carID">
+            <div class="used-carTitle"><h1>Used Cars</h1></div>
+            <img src="sliki/used-car.png" alt="" class="main1" height="500" width="350" style="float:left">
+            <div class="description">
+                <h1 style="font-size: 3em;">Why choose a used car?</h1>
+                <p>Used cars offer a great balance between cost and value. They have already depreciated, so you get more car for your money. 
+                    Used cars also come with a variety of options and features that might be out of budget in new models. They are often well-maintained and come with a detailed history.
+        
+                    Since used cars have been on the road for a while, they have proven their reliability and durability. It is difficult to find the same level of value and affordability in new models.
+                    <br> Used cars also come with a variety of options and features that might be out of budget in new models. They are generally more affordable and can be a great option for first-time buyers.
+                    A used car can be found at various dealerships and private sellers,<br> which offer a wide range of models and prices. When it comes<br> to choosing a used car, one may look for features such as reliability, maintenance history, and overall condition.
+                </p>
+                
+                <div class="buttondiv">
+                    <a href="used-cars.html"><button class="button3">BUY NOW!</button></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="electric-car" id="electric-carID">
+            <div class="electric-carTitle"><h1>Electric Cars</h1></div>
+            <img src="sliki/electric-car.png" alt="" class="main1" height="500" width="400" style="float:left; margin-top:25px">
+            <div class="description">
+                <h1 style="font-size: 3em;">Why choose an electric car?</h1>
+                <p>Electric cars are environmentally friendly and cost-effective in the long run. They have lower running costs and require less maintenance. 
+                    Electric cars also offer a smooth and quiet driving experience, with instant torque and acceleration. They are ideal for city driving and short commutes.
+        
+                    Since electric cars produce zero emissions, they contribute to reducing air pollution and greenhouse gases. It is difficult to find the same level of environmental benefit in traditional gasoline cars.
+                    <br> Electric cars also come with various incentives and tax benefits that make them more affordable. They are generally more efficient and can be charged at home or at public charging stations.
+                    An electric car can be found at various dealerships and online platforms,<br> which offer a wide range of models and prices. When it comes<br> to choosing an electric car, one may look for features such as range, charging time, and available incentives.
+                </p>
+                
+                <div class="buttondiv">
+                    <a href="electric-cars.html"><button class="button4">BUY NOW!</button></a>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="special-offer" id="special-offerID">
+            <div class="special-offerTitle"><h1>Special Offers</h1></div>      
+            <img src="sliki/special-offer-car.png" alt="" class="main1" height="500" width="350" style="float:left; margin-top:50px">
+            <div class="description">
+                <h1 style="font-size: 3em;">Why choose a special offer car?</h1>
+                <p>Special offer cars provide excellent value for money. They often come with additional features and discounts that make them a great deal. 
+                    These cars are usually limited-time offers, so it's a good idea to act quickly to take advantage of the savings. They are perfect for those looking for a bargain.
+        
+                    Since special offer cars are often part of promotional events, they come with unique benefits and incentives. It is difficult to find the same level of value in regular-priced cars.
+                    <br> Special offer cars also come with various financing options that make them more affordable. They are generally more attractive to budget-conscious buyers.
+                    A special offer car can be found at various dealerships and online platforms,<br> which offer a wide range of models and prices. When it comes<br> to choosing a special offer car, one may look for features such as discounts, additional features, and financing options.
+                </p>
+                
+                <div class="buttondiv">
+                    <a href="special-offers.html"><button class="button5">BUY NOW!</button></a>
+                </div>
+            </div>
+        </div>
+        
+
+        <footer>
+            <div class="main-content">
+                <div class="leftF box">
+                    <h2>About us</h2>
+                    <div class="content">
+                        <p>At AutoHub, we are committed to providing superior customer service, expert advice, and competitive pricing on an extensive range of quality cars. Our products include new cars, old cars, used cars, electric cars, and special offer cars. We strive to meet the needs of every car enthusiast and provide a seamless car buying experience.</p>
+                        <div class="socials">
+                            <a href="#"><span class="fab fa-facebook-f"></span></a>
+                            <a href="#"><span class="fab fa-twitter"></span></a>
+                            <a href="#"><span class="fab fa-instagram"></span></a>
+                            <a href="#"><span class="fab fa-youtube"></span></a>
+                            <a href="#"><span class="fab fa-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="middleF box">
+                    <h2>Address</h2>
+                    <div class="content">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text">123 AutoHub Avenue, Car City, CA 90210</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone-alt"></span>
+                            <span class="text">+1 800 123 4567 | +1 800 765 4321</span>
+                        </div>
+                        <div class="email">
+                            <span class="fas fa-envelope"></span>
+                            <span class="text">contact@autohub.com</span>
+                        </div>
+                        <div class="form">
+                            <a href="anketa.html">Help us improve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightF box">
+                    <h2>Contact us</h2>
+                    <div class="content">
+                        <form action="#">
+                            <div class="email">
+                                <div class="text">Email *</div>
+                                <input type="email" required>
+                            </div>
+                            <div class="msg">
+                                <div class="text">Message *</div>
+                                <textarea rows="5" cols="40" required></textarea>
+                            </div>
+                            <div class="btn">
+                                <button type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>

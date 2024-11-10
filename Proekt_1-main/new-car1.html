@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charseet="utf-8">
+        <title>Tesla Model 3</title>
+        <link rel="icon" type="image/png" href="sliki/logo.png">
+        <script src="js/login.js"></script>
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/new-car1.css">
+        <script src="js/matichna1.js"></script>
+        <script src="https://kit.fontawesome.com/8818ee460b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="navTop">
+                    <div class="logo">
+                        <img src="sliki/logo.png" alt="" width="120" height="100" onclick="goToHome()">
+                        </div>
+                        <div class="middle">
+                            <div class="name1"><h1>AUTOHUB</h1></div>
+                            <div class="search">
+                                <input type="text" placeholder="Search..." class="searchBar">
+                                <img src="sliki/search.png" alt="search" class="searchIcon" width="30" height="30">
+                            </div>
+                            <div class="name2"><h1>SHOP</h1></div>
+                        </div>
+                        <div class="login">
+                            <img src="sliki/login-user.png" alt="login" width="130" height="80" onclick="goToLogin()">
+                        </div>
+                </div>
+                <hr>
+            </nav>
+        </header>
+        
+        
+<!--***********************************************************************-->
+        <div class="back">
+            <div class="product-img">
+                <div class="name">
+                    <h2>Tesla Model 3</h2>
+                </div>
+                <div class="prodcut-gallery">
+                    <img id="image" src="sliki/new-cars/new-car1.jpg" style="width: 400px; height: 400px;" onclick="zoom(this)"> 
+                </div>
+                <div class="small">
+                <ul id="prodcut-images" class="inline">
+                    <li class="item">
+                        <a href="#" class="change"><img src="sliki/new-cars/new-car1.jpg" style="width:70px; height:70px"  onclick="first()"></a>
+                    </li>
+                    <li class="item" >
+                        <a href="#" class="change"><img src="sliki/new-cars/new-car2.jpg" style="width:70px; height:70px"  onclick="second()"></a>
+                    </li>
+                    <li class="item" >
+                        <a href="#" class="change"><img src="sliki/new-cars/new-car3.jpg" style="width:70px; height:70px"  onclick="third()"></a>
+                    </li>
+                    
+                </ul>
+                </div>
+                <div class="picture">
+                    <label for="input-img" id="add">Add image</label>
+                    <input type="file" accept="image/jpeg,image/png,image/jpg" id="input-img">
+                    <button id="remove-img">Remove</button>
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <div class="info">
+                <div class="price">
+                    <h1>Price: <span id="price">45,000</span>&euro;</h1>
+                </div>
+               
+
+                <div class="like-share">
+                    <button class="like" id="like">Like   <span class="fa fa-thumbs-up"></span><span class="number" id="number">0</span></button>
+                </div>
+
+                <div class="comment-container">
+                    <div class="pushpin">
+                        <img src="sliki/pushpin.png" width="30px" height="30px">
+                    </div>
+                    <h4>Comment Section</h4>
+                    <div class="comment-box">
+                        <div class="comment-area">
+                            <textarea type="text" id="textarea" rows="5" cols="45" required placeholder="Enter your comment..."></textarea>
+                        </div>
+                        <div class="comment-btn">
+                            <button id="commentBtn">Comment</button>
+                        </div>
+                    </div>
+                    <div class="comment-list">
+                        <ul id="comment-ul">
+                            
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+           
+
+            <div class="buyform">
+                <h2>Order Now</h2>
+                <form action="#">
+                    <h4>Account</h4>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" placeholder="Full Name" required class="fname"><span class="fas fa-user-alt icon"></span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" placeholder="Email Address" required class="fname">
+                            <span class="fas fa-envelope icon"></span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" placeholder="Address" required class="fname">
+                            <span class="fas fa-map-marker-alt icon"></span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" placeholder="City" required class="fname">
+                            <span class="fas fa-institution icon"></span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <h4>Quantity: <span id="quantity">0</span><span class="fa fa-plus" id="plus"></span><span class="fa fa-minus" id="minus"></span></h4>
+                            <h4>Total: <span id="total">0</span>&euro;</h4>
+                        </div>
+                    </div>
+                    
+
+                    <h4>Payment Details</h4>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="tel" name="" class="fname" placeholder="Card Number 1111-2222-3333-4444" required>
+                            <i class="fa fa-credit-card icon"></i>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="tel" name="" class="fname" placeholder="Card CVC 632" required>
+                            <i class="fa fa-user icon"></i>
+                        </div>
+                    </div>
+                    <div class="input-group">
+            
+                            <div class="input-box">
+                                <input type="number" placeholder="Exp Month" required class="fname">
+                                <i class="fa fa-calendar icon"></i>
+                            </div>
+                        
+                        <div class="input-box">
+                            <input type="number" placeholder="Exp Year" required class="fname err">
+                            <i class="fa fa-calendar-o icon iconErr" ></i>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="number" placeholder="Enter Amount" required class="fname">
+                        <i class="fa fa-money icon" ></i>
+                    </div>
+
+                    
+                    <div class="input-group">
+                        <div class="input-box">
+                            <button type="submit" class="paynow">PAY NOW</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+        
+<!--**************************************************************************************8-->
+<div class="description">
+    <h4>Description</h4>
+    <span id="name-span"></span>
+    <pre><b>Model:</b> Tesla Model 3
+
+<b>Battery</b>: Long Range Battery
+<b>Range</b>: Up to 358 miles (EPA est.)
+<b>Performance</b>: 0-60 mph in 3.1 seconds
+<b>Drive</b>: Dual Motor All-Wheel Drive
+
+<b>Interior:</b>
+Premium interior with heated front and rear seats
+15-inch touchscreen display
+Wireless charging for two smartphones
+Custom driver profiles
+
+<b>Safety:</b>
+5-star safety rating from NHTSA
+8 cameras and 12 ultrasonic sensors for 360-degree visibility
+Automatic emergency braking and collision warning
+
+<b>Autopilot</b>:
+Full Self-Driving capability (optional)
+Navigate on Autopilot
+Auto Lane Change
+Autopark
+Summon
+
+<b>Charging:</b>
+Supercharging capability
+Access to Tesla's global Supercharger network
+Home charging options available
+
+<b>Connectivity:</b>
+Standard connectivity includes navigation, live traffic visualization, and more
+Premium connectivity (optional) includes satellite-view maps, video streaming, and more
+
+<b>Warranty:</b>
+4-year/50,000-mile limited warranty
+8-year/120,000-mile battery and drive unit warranty
+
+More info: <a style="text-decoration: underline;" target="_new" href="https://www.tesla.com/model3">More informations... </a> </pre>                    
+</div>
+
+
+        <footer>
+            <div class="main-content">
+                <div class="leftF box">
+                    <h2>About us</h2>
+                    <div class="content">
+                        <p>At AutoHub, we are committed to providing superior customer service, expert advice, and competitive pricing on an extensive range of quality cars. Our products include new cars, old cars, used cars, electric cars, and special offer cars. We strive to meet the needs of every car enthusiast and provide a seamless car buying experience.</p>
+                        <div class="socials">
+                            <a href="#"><span class="fab fa-facebook-f"></span></a>
+                            <a href="#"><span class="fab fa-twitter"></span></a>
+                            <a href="#"><span class="fab fa-instagram"></span></a>
+                            <a href="#"><span class="fab fa-youtube"></span></a>
+                            <a href="#"><span class="fab fa-github"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="middleF box">
+                    <h2>Address</h2>
+                    <div class="content">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text">123 AutoHub Avenue, Car City, CA 90210</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone-alt"></span>
+                            <span class="text">+1 800 123 4567 | +1 800 765 4321</span>
+                        </div>
+                        <div class="email">
+                            <span class="fas fa-envelope"></span>
+                            <span class="text">contact@autohub.com</span>
+                        </div>
+                        <div class="form">
+                            <a href="anketa.html">Help us improve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightF box">
+                    <h2>Contact us</h2>
+                    <div class="content">
+                        <form action="#">
+                            <div class="email">
+                                <div class="text">Email *</div>
+                                <input type="email" required>
+                            </div>
+                            <div class="msg">
+                                <div class="text">Message *</div>
+                                <textarea rows="5" cols="40" required></textarea>
+                            </div>
+                            <div class="btn">
+                                <button type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>

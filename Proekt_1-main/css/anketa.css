@@ -1,0 +1,114 @@
+html{
+    scroll-behavior: smooth;/* za da bide smooth scrollo so pritiskanje na menu itemite*/
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lato' , sans-serif;
+    margin:0;
+    padding:0;
+    
+}
+nav{
+    background-image:linear-gradient(rgb(37, 0, 0),40%,black);
+    color:white;
+    padding: 20px 50px;
+}
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -50px;
+}
+.logo{
+    cursor: pointer;
+    position: relative;
+}
+.search{
+    display:flex;
+    align-items: center;
+    background-color: lightgrey;
+    padding: 5px 10px;
+    margin: 0px 100px;
+    border-radius: 15px;
+}
+.searchBar{
+    border: none;
+    background-color: transparent;
+}
+.searchBar::placeholder{
+    color: black;
+}
+.name1 , .name2{
+    font-size: 1.6em;
+    border-bottom:4px solid red;
+    line-height: 0px;
+    position:relative;
+}
+
+.login{
+    cursor:pointer;
+}
+
+.back{
+    background-image:linear-gradient(to bottom,black,10%, rgb(22, 0, 0));
+    color:white;
+    
+}
+.container,.intro{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+ 
+}
+.radio,.checkbox{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+}
+#name,#email,#number,#dropdown,#text{ 
+  width:100%;
+  height:1.2rem;
+  font-size:1rem;
+  border-radius:3px;
+  border:none;
+  padding: 1.34rem;
+}
+#submit{
+  padding:0;
+  background-color: red;
+  margin-bottom: 50px;
+  width:500px;
+  height:5px;
+  font-size:1rem;
+  border-radius:3px;
+  border:none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+.back textarea{
+  height:auto;
+}
+option{
+  color:#000;
+}
+#title{
+  font-size:1.5rem;
+}

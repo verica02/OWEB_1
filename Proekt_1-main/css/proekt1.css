@@ -1,0 +1,346 @@
+html{
+    scroll-behavior: smooth;/* za da bide smooth scrollo so pritiskanje na menu itemite*/
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lato' , sans-serif;
+    width: 100%;
+
+}
+nav{
+    background-image:linear-gradient(rgb(37, 0, 0),40%,black);
+    color:white;
+    padding: 20px 50px;
+    
+}
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -50px;
+}
+.logo{
+    cursor: pointer;
+    position: relative;
+}
+.search{
+    display:flex;
+    align-items: center;
+    background-color: lightgrey;
+    padding: 5px 10px;
+    margin: 0px 100px;
+    border-radius: 15px;
+}
+.searchBar{
+    border: none;
+    background-color: transparent;
+}
+.searchBar::placeholder{
+    color: black;
+}
+.name1 , .name2{
+    font-size: 1.6em;
+    border-bottom:4px solid red;
+    line-height: 0px;
+    position:relative;
+}
+
+.login{
+    cursor: pointer;
+}
+.navBottom{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuItems1, .menuItems2, .menuItems3, .menuItems4, .menuItems5{
+    margin-right:80px;
+    cursor:pointer;
+    color:lightgray;
+}
+.menuItems1:hover{
+    font-size: 1.5em;
+    border-bottom:3px solid rgb(34, 255, 34);
+}
+.menuItems2:hover{
+    font-size: 1.5em;
+    border-bottom:3px solid red;
+}
+.menuItems3:hover{
+    font-size: 1.5em;
+    border-bottom:3px solid orange;
+}
+.menuItems4:hover{
+    font-size: 1.5em;
+    border-bottom:3px solid blue;
+}
+.menuItems5:hover{
+    font-size: 1.5em;
+    border-bottom:3px solid gray;
+}
+
+.description{
+    color:white;
+    position: relative;
+    left:30px;
+    padding-right: 50px;
+    font-size: 1.5em;
+}
+
+/* NEW-CAR */
+.new-car{ 
+    
+    background-image: linear-gradient(to bottom right, black,70%, green );
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.new-carTitle{
+    padding-top:10px;
+    font-size:2em;
+    background-image: linear-gradient(to bottom, red,5%, black );
+
+    border-bottom: 5px solid rgb(34, 255, 34);
+    line-height: 0px;
+    color: white;
+    position:relative;
+}
+
+.main1{
+    position:relative;
+    left:5px;
+    float:left;
+}
+
+.buttondiv{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin:5px;
+    padding:10px;
+}
+.button1{
+    font-weight: bold;
+    width:100%;
+    font-size: 2em;
+    align-items: center;
+    text-align: center;
+    width:600px;
+    height:80px;
+    border:none;
+    color: white;
+    background-color: rgb(34, 255, 34) ;
+    border-radius: 20px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+.button1:hover{
+    background-color: green;
+}
+
+
+
+
+
+/* OLD-CAR*/
+.old-car{
+    padding-top:0;
+    margin-top:-5px;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, black, 70%, rgb(163, 0, 0) );
+    position:relative;
+}
+.old-carTitle{
+    background-image: linear-gradient(to bottom, green,2%, black );
+    padding-top:10px;
+    font-size:2em;
+    border-bottom: 5px solid red;
+    line-height: 0px;
+    color: white;
+}
+
+.button2{
+    font-weight: bold;
+    width:100%;
+    font-size: 2em;
+    align-items: center;
+    text-align: center;
+    width:600px;
+    height:80px;
+    border:none;
+    color: white;
+    background-color: red ;
+    border-radius: 20px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+.button2:hover{
+    background-color: rgb(161, 0, 0);
+}
+
+
+/* USED-CAR */
+.used-car{
+    margin-top:-5px;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, black,70%, rgb(142, 92, 0) );
+    position: relative;
+}
+.used-carTitle{
+    padding-top:10px;
+    font-size:2em;
+    background-image: linear-gradient(to bottom , rgb(163, 0, 0),2%,black );
+
+    border-bottom: 5px solid orange;
+    line-height: 0px;
+    color: white;
+}
+.button3{
+    font-weight: bold;
+    width:100%;
+    font-size: 2em;
+    align-items: center;
+    text-align: center;
+    width:600px;
+    height:80px;
+    border:none;
+    color: white;
+    background-color: orange ;
+    border-radius: 20px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+.button3:hover{
+    background-color: rgb(153, 100, 0);
+}
+
+
+
+/* ELECTRIC-CAR */
+.electric-car{
+    margin-top:-5px;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, black, 70%, rgb(0, 0, 145) );
+    position: relative;
+}
+.electric-carTitle{
+    padding-top:10px;
+    font-size:2em;
+    background-image: linear-gradient(to bottom, rgb(142, 92, 0),2%,black );
+    border-bottom: 5px solid blue;
+    line-height: 0px;
+    color: white;
+}
+.button4{
+    font-weight: bold;
+    width:100%;
+    font-size: 2em;
+    align-items: center;
+    text-align: center;
+    width:600px;
+    height:80px;
+    border:none;
+    color: white;
+    background-color: blue ;
+    border-radius: 20px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+.button4:hover{
+    background-color: rgb(0, 0, 138);
+}
+
+/* SPECIAL-OFFER */
+.special-offer{
+    margin-top: -5px;
+    padding-top: 5px;
+    background-image: linear-gradient(to bottom right, black,70%, rgb(95, 95, 95) );
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.special-offerTitle{
+    padding-top:10px;
+    font-size:2em;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 145),2%,black );
+    border-bottom: 5px solid gray;
+    line-height: 0px;
+    color: white;
+}
+.button5{
+    font-weight: bold;
+    width:100%;
+    font-size: 2em;
+    align-items: center;
+    text-align: center;
+    width:600px;
+    height:80px;
+    border:none;
+    color: white;
+    background-color: gray ;
+    border-radius: 20px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+.button5:hover{
+    background-color: rgb(75, 75, 75);
+}
+
+.end{
+    background-color: white;
+}
+
+
+.opening{
+    background-image: linear-gradient(black, 80% ,rgb(91, 0, 0));
+    height:750px;
+    width: 100%;
+    
+}
+.allComp{
+    margin:0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.pcimg{
+    position: relative;
+    left:50px;
+}
+.pctext{
+    color:White;
+    font-size: 3em;
+    text-shadow: 10px 10px 10px gray;
+}
+.pctext1{
+    color:red;
+    text-shadow: 10px 10px 10px rgb(150, 0, 0);
+
+}
+.components{
+    color:white;
+    text-align: center;
+    margin-top:100px;
+    font-size: 2em;
+}
