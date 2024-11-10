@@ -1,0 +1,155 @@
+html{
+    scroll-behavior: smooth;/* za da bide smooth scrollo so pritiskanje na menu itemite*/
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lato' , sans-serif;
+    margin:0;
+    padding:0;
+    
+}
+nav{
+    background-image:linear-gradient(rgb(37, 0, 0),40%,black);
+    color:white;
+    padding: 20px 50px;
+}
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -50px;
+}
+.logo{
+    cursor: pointer;
+    position: relative;
+}
+.search{
+    display:flex;
+    align-items: center;
+    background-color: lightgrey;
+    padding: 5px 10px;
+    margin: 0px 100px;
+    border-radius: 15px;
+}
+.searchBar{
+    border: none;
+    background-color: transparent;
+}
+.searchBar::placeholder{
+    color: black;
+}
+.name1 , .name2{
+    font-size: 1.6em;
+    border-bottom:4px solid red;
+    line-height: 0px;
+    position:relative;
+}
+
+.login{
+    cursor:pointer;
+}
+
+
+.back{
+    background-image:linear-gradient(to bottom,black,50%, rgb(22, 0, 0));
+    color: white;
+}
+.back h1{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-left: 25px;
+    font-size: 3em;
+    border-bottom: 5px solid red;
+}
+.card-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 400px;
+    margin:20px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 40px 10px rgb(115, 0, 0);
+    margin-bottom:50px;
+}
+.image-content , .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px , 14px;
+}   
+.image-content{
+    position: relative;
+    row-gap: 5px;
+}
+.card-image{
+    position:relative;
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    padding:3px;
+}
+.overlay{
+    position:absolute;
+    left:0;
+    right: 0;
+    height:110%;
+
+    width:100%;
+    background-color: rgb(163, 0, 0);
+    border-radius: 25px 25px 0 25px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius:50%;
+    border: 4px solid black;
+}
+.name{
+    padding-top:5px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #333;
+}
+.description{
+    font-size:14px;
+    color: #707070;
+    text-align: center;
+}
+.card-content .price{
+    color:black;
+}
+.button{
+    border:none;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    padding: 8px 16px;
+    background-color: rgb(165, 0, 0) ;
+    width:100%;
+    height: 50px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background-color: rgb(87, 0, 0);
+}

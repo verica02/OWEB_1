@@ -1,0 +1,89 @@
+
+footer{
+    position: relative;
+    bottom:0;
+    margin:0;   
+    margin-top:-19px;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+    padding:0;
+    color:white;
+    width:100%;
+    background-color: black;
+}
+.main-content{
+    display:flex;
+    justify-content: space-between;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding:10px 80px;
+}
+.box .content{
+    margin: 20px 0 0 0;
+}
+.leftF .content p{
+    text-align: justify;
+}
+.leftF .content .socials{
+    margin: 30px 0 0 0;
+}
+.leftF .content .socials a{
+    padding: 0 5px;
+    color:white;
+}
+.leftF .content .socials a span{
+    height:50px;
+    width: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    text-align: center;
+}
+.leftF .content .socials a span:hover{
+    background-color: #f12020;
+}
+.middleF .content div{
+    margin-bottom: 10px;
+}
+.rightF .content form .email{
+    margin-bottom:15px;
+}
+.rightF .content form .msg{
+    margin-bottom:15px;
+}
+.rightF .content form .btn button{
+    width:80px;
+    height:30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.rightF .content form .msg textarea{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.rightF .content form .email input{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.form{
+    display: flex;
+    margin-top: 70px;
+    background-color: rgb(158, 150, 150);
+    border:none;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.form a{
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
